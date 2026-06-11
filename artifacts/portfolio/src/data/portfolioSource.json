@@ -1,0 +1,166 @@
+{
+  "profile": {
+    "name": "Muksudul Islam",
+    "title": "Junior Software QA Engineer",
+    "location": "Dhaka, Bangladesh",
+    "summary": "Detail-oriented Junior SQA Engineer with 2+ years of hands-on experience testing web, mobile, and REST API layers across healthcare platforms. Proven track record contributing to 9+ projects, reducing post-release defects by 95% and bug resolution time by 75%. Experienced in agile squad environments, test automation with Cypress and Selenium, and performance testing with JMeter.",
+    "metrics": {
+      "bugs_reported": 120,
+      "tests_executed": 300,
+      "defect_reduction": "95%",
+      "projects_delivered": 9,
+      "quality_score": "98%",
+      "automation_coverage": "75%",
+      "deployment_readiness": "HIGH",
+      "defect_leakage": "LOW"
+    },
+    "contact": {
+      "email": "muksudul.islam0016@gmail.com",
+      "github": "github.com/MuksudulIslam",
+      "linkedin": "linkedin.com/in/muksudulislam"
+    }
+  },
+  "technical_arsenal": {
+    "testing": [
+      "Manual Testing",
+      "Functional Testing",
+      "Regression Testing",
+      "Smoke Testing",
+      "Sanity Testing",
+      "API Testing",
+      "Performance Testing"
+    ],
+    "automation": [
+      "Playwright",
+      "Cypress",
+      "Selenium WebDriver",
+      "TestNG",
+      "Appium",
+      "JUnit",
+      "Rest Assured"
+    ],
+    "api_testing": [
+      "Postman",
+      "Newman",
+      "Swagger",
+      "JSONPlaceholder",
+      "DummyJSON"
+    ],
+    "performance": ["Apache JMeter"],
+    "bug_tracking": ["Jira", "Redmine"],
+    "languages": ["JavaScript", "Java", "Python", "SQL"],
+    "version_control": ["Git", "GitHub", "GitHub CLI"],
+    "methodologies": ["Agile", "Scrum", "SDLC", "STLC"],
+    "skill_radar_estimates": {
+      "api_testing": "90%",
+      "test_automation": "82%",
+      "performance_testing": "75%"
+    }
+  },
+  "experience": [
+    {
+      "role": "Junior Software QA Engineer",
+      "company": "CMED Health Ltd.",
+      "duration": "Aug 2024 – Present",
+      "responsibilities": [
+        "Collaborated with a 10-member QA team across agile ceremonies",
+        "Supported 4+ healthcare products including OpenMRS-based systems",
+        "Executed 300+ test cases across web, mobile, and REST API layers",
+        "Conducted API, Regression, Smoke, Sanity, and Performance Testing",
+        "Reported 120+ defects with detailed reproduction steps in Jira",
+        "Worked closely with developers to achieve 95% defect reduction",
+        "Managed infrastructure systems alongside QA responsibilities"
+      ],
+      "tags": ["API Testing", "Regression", "Selenium", "JMeter", "Jira", "Agile"]
+    },
+    {
+      "role": "Trainee Software QA Engineer",
+      "company": "CMED Health Ltd.",
+      "duration": "May 2024 – Jul 2024",
+      "responsibilities": [
+        "Conducted Functional and Regression Testing on web applications",
+        "Performed Mobile and iOS Testing across healthcare platforms",
+        "Designed test cases aligned with acceptance criteria",
+        "Assisted in Bug Triage support and defect life-cycle management"
+      ],
+      "tags": ["Functional Testing", "Mobile Testing", "iOS", "Bug Triage", "Test Design"]
+    }
+  ],
+  "featured_projects": [
+    {
+      "name": "dmoney API Automation",
+      "description": "End-to-end automated API test suite for the dmoney payment platform using Postman collections and Newman CLI runner with HTML reports and CI integration.",
+      "technologies": ["Postman", "Newman", "REST API"],
+      "github": "https://github.com/MuksudulIslam/dmoney-API-automation-newman",
+      "tags": ["API", "Automation"]
+    },
+    {
+      "name": "Random User API Performance Test",
+      "description": "JMeter performance testing suite for the Random User public API with load, stress, and endurance test plans, featuring threshold assertions and HTML dashboard reports.",
+      "technologies": ["JMeter", "Performance Testing"],
+      "github": "https://github.com/MuksudulIslam/Random-User-API-Performance-Test",
+      "tags": ["Performance", "Load Testing"]
+    },
+    {
+      "name": "OrangeHRM Web Automation",
+      "description": "Full Selenium WebDriver automation framework for OrangeHRM using Java, TestNG, and Page Object Model design pattern with cross-browser support and parallel execution.",
+      "technologies": ["Selenium", "Java", "TestNG", "Page Object Model"],
+      "github": "https://github.com/MuksudulIslam/TestNG-Selenium-OrangeHRM-Web-Automation",
+      "tags": ["Automation", "Web"]
+    },
+    {
+      "name": "SauceDemo Playwright Suite",
+      "description": "Modern Playwright automation framework for SauceDemo e-commerce app using JavaScript with POM architecture, fixtures, and visual regression assertions.",
+      "technologies": ["Playwright", "JavaScript", "POM"],
+      "github": "https://github.com/MuksudulIslam/Saucedemo-Playwright",
+      "tags": ["Automation", "E2E"]
+    }
+  ],
+  "healthcare_systems_tested": [
+    {
+      "name": "Aalo Clinic",
+      "context": "UNICEF Collaboration",
+      "description": "Primary healthcare platform tested for UNICEF-backed digital health delivery.",
+      "features": ["OpenMRS+ Integration", "Inventory Management", "Patient Review", "Immunization Tracking"]
+    },
+    {
+      "name": "Susastho",
+      "context": "IoT Healthcare",
+      "description": "Telemedicine and IoT-connected corporate healthcare platform tested for enterprise deployments.",
+      "features": ["IoT Device Integration", "Telemedicine Flows", "Corporate Healthcare", "Multi-tenant Architecture"],
+      "clients": ["BRAC", "Pharmacia", "Fiber@Home"]
+    },
+    {
+      "name": "Government Health",
+      "context": "Govt. Outdoor Dispensary",
+      "description": "Government-level healthcare system for outdoor patient services and medication management.",
+      "features": ["Patient Care Flows", "Inventory Control", "Immunization Tracking"]
+    },
+    {
+      "name": "Sontusti",
+      "context": "DGHS Bangladesh",
+      "description": "Patient satisfaction and hospital services management platform for the Directorate General of Health Services.",
+      "features": ["Patient Satisfaction System", "Hospital Services Integration", "Survey Flows", "Analytics Dashboards"]
+    }
+  ],
+  "education_and_certifications": {
+    "education": {
+      "institution": "Daffodil International University",
+      "degree": "Bachelor of Science in Computer Science & Engineering",
+      "gpa": "3.24 / 4.00",
+      "research": "Bengali Sentiment Analysis on E-Commerce Product Reviews"
+    },
+    "certifications": [
+      {
+        "name": "Full Stack SQA & Software Test Automation",
+        "provider": "Road To SDET",
+        "topics": ["Manual Testing", "API Testing", "Automation", "Mobile Testing", "CI/CD", "Performance Testing"]
+      },
+      {
+        "name": "EDGE Training Program",
+        "provider": "ICT Division, Bangladesh",
+        "topics": ["SDLC", "QA Practices", "Industry Testing Standards"]
+      }
+    ]
+  }
+}
