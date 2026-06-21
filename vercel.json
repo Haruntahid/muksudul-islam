@@ -1,6 +1,6 @@
 {
-  "buildCommand": "pnpm run build",
-  "outputDirectory": "dist/public",
+  "buildCommand": "cd artifacts/portfolio && pnpm run build",
+  "outputDirectory": "artifacts/portfolio/dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "framework": null,
   "env": {
