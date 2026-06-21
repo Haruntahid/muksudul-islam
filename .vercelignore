@@ -1,0 +1,10 @@
+node_modules
+.git
+artifacts/api-server/dist
+**/.tsbuildinfo
+.cache
+.local
+attached_assets
+/lib
+/artifacts/mockup-sandbox
+/scripts

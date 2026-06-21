@@ -1,11 +1,28 @@
 import serverless from "serverless-http";
 import app from "../src/app";
 import { connectToDB } from "../src/lib/mongo";
+import { bootstrapDatabase } from "../src/lib/bootstrap";
 
-if (process.env.MONGODB_URI) {
-  connectToDB(process.env.MONGODB_URI).catch((e) => {
-    console.error("Mongo connect error:", e.message);
-  });
+let initPromise: Promise<void> | null = null;
+
+function ensureReady(): Promise<void> {
+  if (!initPromise) {
+    initPromise = (async () => {
+      const uri = process.env.MONGODB_URI;
+      if (!uri) return;
+      await connectToDB(uri);
+      await bootstrapDatabase();
+    })().catch((err) => {
+      initPromise = null;
+      throw err;
+    });
+  }
+  return initPromise;
 }
 
-export default serverless(app as any);
+const handler = serverless(app as Parameters<typeof serverless>[0]);
+
+export default async function vercelHandler(req: unknown, res: unknown) {
+  await ensureReady();
+  return handler(req as never, res as never);
+}
