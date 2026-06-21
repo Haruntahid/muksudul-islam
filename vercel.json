@@ -2,20 +2,5 @@
   "buildCommand": "cd artifacts/portfolio && pnpm run build",
   "outputDirectory": "artifacts/portfolio/dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
-  "framework": null,
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "/api-server/index.ts"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "functions": {
-    "artifacts/api-server/src/index.ts": {
-      "runtime": "nodejs20.x"
-    }
-  }
+  "framework": null
 }
