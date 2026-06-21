@@ -44,7 +44,7 @@ const TOOL_ICONS: Record<string, { icon: string; color: string }> = {
   JavaScript: { icon: "SiJavascript", color: "#f1e05a" },
   Java: { icon: "SiOpenjdk", color: "#F89820" },
   Python: { icon: "SiPython", color: "#3572a5" },
-  Playwright: { icon: "SiCypress", color: "#31BAF1" },
+  Playwright: { icon: "SiCypress", color: "#2EA043" },
 };
 
 function initialsFromName(name: string): string {
@@ -95,12 +95,12 @@ export function transformPortfolioSource(data: PortfolioSource = source) {
     }));
 
   const marqueeTools: { name: string; icon: string; color: string }[] = [];
-  const seen = new Set<string>();
+  const seenIcons = new Set<string>();
   for (const cat of skills) {
     for (const skill of cat.skills) {
       const mapped = TOOL_ICONS[skill];
-      if (mapped && !seen.has(skill)) {
-        seen.add(skill);
+      if (mapped && !seenIcons.has(mapped.icon)) {
+        seenIcons.add(mapped.icon);
         marqueeTools.push({ name: skill, icon: mapped.icon, color: mapped.color });
       }
     }

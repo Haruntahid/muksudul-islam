@@ -6,16 +6,17 @@ import { usePortfolio } from "@/context/PortfolioContext";
 import { getSocialIconComponent, getTechIconComponent } from "@/lib/icons";
 
 const ORBIT_POSITIONS = [
-  "absolute -top-4 left-1/2 -translate-x-1/2",
-  "absolute top-1/2 -right-4 -translate-y-1/2",
-  "absolute -bottom-4 left-1/2 -translate-x-1/2",
+  "absolute -top-12 left-1/2 -translate-x-1/2",
+  "absolute top-1/2 -right-12 -translate-y-1/2",
+  "absolute -bottom-12 left-1/2 -translate-x-1/2",
+  "absolute top-1/2 -left-12 -translate-y-1/2",
 ];
 
 export default function Hero() {
   const { data, isLoading } = usePortfolio();
   const hero = data.settings.hero ?? {};
   const socials = data.socials.filter((s) => s.icon !== "map-pin");
-  const orbitTools = (data.settings.marquee_tools ?? []).slice(0, 3);
+  const orbitTools = (data.settings.marquee_tools ?? []).slice(0, 4);
 
   if (isLoading) {
     return (
@@ -104,7 +105,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative flex justify-center items-center"
         >
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-primary/20 flex items-center justify-center bg-card/30 backdrop-blur-sm overflow-hidden">
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-primary/20 flex items-center justify-center bg-card/30 backdrop-blur-sm overflow-visible">
             {hero.profileImageUrl ? (
               <img
                 src={hero.profileImageUrl}
@@ -126,10 +127,10 @@ export default function Hero() {
                 return (
                   <div
                     key={tool.name}
-                    className={`${ORBIT_POSITIONS[i] ?? ORBIT_POSITIONS[0]} p-2 bg-background rounded-full border border-border shadow-lg`}
+                    className={`${ORBIT_POSITIONS[i] ?? ORBIT_POSITIONS[0]} p-3 bg-card/80 backdrop-blur-sm rounded-full border-2 border-primary/30 shadow-xl`}
                     style={{ color: tool.color ?? "hsl(var(--primary))" }}
                   >
-                    <Icon className="w-6 h-6" />
+                    <Icon className="w-7 h-7" />
                   </div>
                 );
               })}
